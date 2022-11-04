@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 
 // 对外提供静态资源（"/public"为路径前缀）
-app.use(express.static("./public"));
+// app.use(express.static("./public"));
 app.use("/public", express.static("./public"));
 
 // 监听get请求
